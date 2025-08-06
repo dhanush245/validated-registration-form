@@ -26,3 +26,6 @@ A fully responsive and accessible registration form built with **HTML**, **CSS**
 ---
 
 ## 🖼️ Preview
+<img width="1860" height="941" alt="image" src="https://github.com/user-attachments/assets/7586fd15-1921-4fbf-8ff8-6854ca94d971" />
+
+
