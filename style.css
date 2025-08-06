@@ -1,0 +1,165 @@
+body {
+    background: ;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #314755;
+    margin-bottom: 30px;
+    letter-spacing: 1.5px;
+}
+
+#regForm {
+    background: #fff;
+    max-width: 410px;
+    margin: 0 auto;
+    padding: 28px 32px 20px 32px;
+    border-radius: 16px;
+    box-shadow: 0 6px 32px rgba(40, 73, 118, 0.15);
+}
+
+.field-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+label {
+    display: inline-block;
+    width: 138px;
+    font-weight: 500;
+    color: #436079;
+    vertical-align: top;
+    margin-top: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea,
+select {
+    width: 200px;
+    padding: 8px 10px;
+    border: 1.5px solid #bfcfe3;
+    border-radius: 6px;
+    font-size: 1em;
+    color: #435872;
+    background: #f5f9fd;
+    transition: border-color 0.3s;
+    resize: vertical;
+    min-height: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #3680f7;
+    background: #edf4fd;
+}
+
+textarea {
+    height: 55px;
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-left: 12px;
+    margin-right: 3px;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.error {
+    color: #e94560;
+    margin-left: 8px;
+    font-size: 0.93em;
+    position: absolute;
+    left: 325px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button[type="submit"] {
+    width: 85%;
+    display: block;
+    margin: 18px auto 0 auto;
+    background: linear-gradient(90deg, #3681f6 30%, #4fd1c5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 14px rgba(54, 129, 246, 0.13);
+    letter-spacing: 1.5px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #2767d8 20%, #19bdb2 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 24px rgba(54, 129, 246, 0.23);
+}
+
+@media (max-width: 530px) {
+    #regForm {
+        padding: 14px 8px 12px 8px;
+        max-width: 98vw;
+    }
+
+    label {
+        width: 99px;
+        font-size: 0.95em;
+    }
+
+    .error {
+        left: unset;
+        top: unset;
+        position: static;
+        display: block;
+        margin: 3px 0 0 0;
+        transform: none;
+        font-size: 0.97em;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 96%;
+        min-width: 90px;
+    }
+
+    button[type="submit"] {
+        width: 96%;
+    }
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+}
+
+.field-group label {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.field-group input[type="checkbox"]+span {
+    display: inline-block;
+}

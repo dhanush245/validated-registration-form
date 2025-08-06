@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form id="regForm" autocomplete="on" novalidate>
+        <div class="field-group">
+            <label>First Name*:</label>
+            <input type="text" id="firstName" name="firstName">
+            <span id="firstNameError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Last Name*:</label>
+            <input type="text" id="lastName" name="lastName">
+            <span id="lastNameError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>User Name*:</label>
+            <input type="text" id="userName" name="userName">
+            <span id="userNameError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Password*:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Email Address*:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Phone Number*:</label>
+            <input type="text" id="phone" name="phone" maxlength="10">
+            <span id="phoneError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" checked>Male
+            <input type="radio" name="gender" id="female" value="female">Female
+            <input type="radio" name="gender" id="other" value="other">Other
+            <span id="genderError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>City*:</label>
+            <input type="text" id="city" name="city">
+            <span id="cityError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>State*:</label>
+            <input type="text" id="state" name="state">
+            <span id="stateError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Date of Birth*:</label>
+            <input type="date" id="dob" name="dob">
+            <span id="dobError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>Address*:</label>
+            <textarea id="address" name="address"></textarea>
+            <span id="addressError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <label>
+                <input type="checkbox" id="terms" name="terms">
+                I agree to Terms and Conditions*
+            </label>
+            <span id="termsError" class="error"></span>
+        </div>
+        <div class="field-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
